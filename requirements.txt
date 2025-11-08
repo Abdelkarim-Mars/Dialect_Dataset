@@ -1,0 +1,22 @@
+# Cartesia API Dataset Generator - Python Dependencies
+# Natural, Expressive Arabic Speech Dataset with Sonic 3 TTS
+
+# Core API Communication
+requests>=2.31.0          # HTTP requests to Cartesia API with retry support
+
+# Data Management & CSV
+pandas>=2.0.0             # Manifest CSV generation and manipulation
+numpy>=1.24.0             # Numerical operations for audio processing
+
+# Audio Processing & I/O
+soundfile>=0.12.1         # WAV file reading/writing with metadata support
+pydub>=0.25.1             # Audio normalization, format conversion, silence padding
+
+# Progress & Logging
+tqdm>=4.65.0              # Progress bars for batch generation
+
+# Environment Variables
+python-dotenv>=1.0.0      # .env file management for API keys
+
+# Validation & Testing
+pytest>=7.4.0             # Unit testing framework (optional)
