@@ -14,7 +14,7 @@ load_dotenv()
 # API Configuration
 # ============================================================================
 
-CARTESIA_API_KEY = os.getenv("CARTESIA_API_KEY")
+CARTESIA_API_KEY = "sk_car_kzuMkorbcA8fryzxsBYfHe"
 CARTESIA_API_VERSION = os.getenv("CARTESIA_API_VERSION", "2024-06-10")
 CARTESIA_BASE_URL = "https://api.cartesia.ai"
 
