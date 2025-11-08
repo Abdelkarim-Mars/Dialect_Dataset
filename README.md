@@ -33,7 +33,23 @@ cp .env.template .env
 nano .env  # Add your Cartesia API key
 ```
 
-### 2. Voice Discovery
+### 2. Quick Test (Optional)
+
+Test Cartesia API with a single Tunisian synthesis:
+
+```bash
+# Pre-flight check
+python check_setup.py
+
+# Single Tunisian TTS synthesis
+python main.py
+
+# Output: output_tn.wav
+```
+
+See [MAIN_TTS_USAGE.md](MAIN_TTS_USAGE.md) for detailed documentation.
+
+### 3. Voice Discovery
 
 ```bash
 # Discover and test Arabic voices
@@ -45,7 +61,7 @@ python discover_voices.py
 # - Create voice-to-dialect mappings
 ```
 
-### 3. Generate Dataset
+### 4. Generate Dataset
 
 ```bash
 # Full generation (2,500 utterances)
@@ -63,12 +79,15 @@ chmod +x quickstart.sh
 ```
 Dialect_Dataset/
 ├── config.py                   # Configuration & settings
+├── main.py                     # Single TTS test script ⭐ NEW
+├── check_setup.py              # Pre-flight validation ⭐ NEW
 ├── discover_voices.py          # Voice discovery tool
 ├── generate_dataset.py         # Main dataset generator
 ├── requirements.txt            # Python dependencies
 ├── setup.sh                    # Automated setup script
 ├── quickstart.sh              # Quick start pipeline
 ├── SETUP.md                   # Detailed setup guide
+├── MAIN_TTS_USAGE.md          # main.py documentation ⭐ NEW
 │
 ├── examples/                  # Usage examples
 │   ├── query_dataset.py      # Query & analyze dataset

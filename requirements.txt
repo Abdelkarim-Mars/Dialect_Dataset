@@ -3,6 +3,7 @@
 
 # Core API Communication
 requests>=2.31.0          # HTTP requests to Cartesia API with retry support
+httpx>=0.25.0             # Modern async HTTP client for main.py script
 
 # Data Management & CSV
 pandas>=2.0.0             # Manifest CSV generation and manipulation
