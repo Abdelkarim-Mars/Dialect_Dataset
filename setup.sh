@@ -14,21 +14,7 @@ echo "Checking Python version..."
 python3 --version || { echo "Error: Python 3 not found"; exit 1; }
 echo ""
 
-# Create virtual environment
-echo "Creating virtual environment..."
-if [ ! -d "venv" ]; then
-    python3 -m venv venv
-    echo "✓ Virtual environment created"
-else
-    echo "✓ Virtual environment already exists"
-fi
-echo ""
 
-# Activate virtual environment
-echo "Activating virtual environment..."
-source venv/bin/activate
-echo "✓ Virtual environment activated"
-echo ""
 
 # Upgrade pip
 echo "Upgrading pip..."
