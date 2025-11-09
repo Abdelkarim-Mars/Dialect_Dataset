@@ -26,7 +26,7 @@ TTS_ENDPOINT = f"{CARTESIA_BASE_URL}/tts/bytes"
 # Model Configuration - Sonic 3 for Natural, Expressive Audio
 # ============================================================================
 
-MODEL_ID = "sonic-multilingual"  # Cartesia Sonic 3 multilingual model
+MODEL_ID = "sonic-3"  # Cartesia Sonic 3 multilingual model
 LANGUAGE_CODE = "ar"             # Arabic language code
 
 # Output Format for High-Quality, Natural Audio
